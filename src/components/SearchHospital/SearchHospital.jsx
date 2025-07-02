@@ -70,9 +70,10 @@ export default function SearchHospital() {
         flexDirection: { xs: "column", md: "row" },
       }}
     >
+    <div  id="state">
+      
       <Select
-        displayEmpty
-        id="state"
+        displayEmpty 
         name="state"
         value={formData.state}
         onChange={handleChange}
@@ -93,6 +94,8 @@ export default function SearchHospital() {
           </MenuItem>
         ))}
       </Select>
+    </div>
+    <div  id="city">
 
       <Select
         displayEmpty
@@ -117,10 +120,11 @@ export default function SearchHospital() {
           </MenuItem>
         ))}
       </Select>
-
+</div>
       <Button
         type="submit"
-        variant="contained"
+        variant="contained"   
+        id="searchBtn"
         size="large"
         startIcon={<SearchIcon />}
         sx={{ py: "15px", px: 8, flexShrink: 0 }}
