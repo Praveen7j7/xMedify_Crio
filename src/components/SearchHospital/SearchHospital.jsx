@@ -74,6 +74,7 @@ export default function SearchHospital() {
       <Select
         displayEmpty 
         name="state"
+        id="state"
         value={formData.state}
         onChange={handleChange}
         startAdornment={
